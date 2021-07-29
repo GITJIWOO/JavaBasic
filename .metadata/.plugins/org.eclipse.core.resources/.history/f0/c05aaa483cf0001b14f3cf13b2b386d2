@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%!
+		Random random = new Random();
+		int cumulative = 0;
+		int individual = 1;
+		int luckNum;
+		int reQuest(){
+			return cumulative += 1;
+		}
+		int luckNumber(){
+			luckNum = random.nextInt(10) + 1;
+			return luckNum;
+		}
+		String luckColor(){
+			double randomNum = random.nextInt();
+			if(randomNum >= 0.66){
+				return "빨강";
+			} else if (randomNum >= 0.33){
+				return "노랑";
+			} else{
+				return "파랑";
+			}
+		}
+		%>
+		<%
+		out.println("<h1>Web프로그래밍</h1>");
+		out.println("페이지 누적 요청수 : " + reQuest() + ", 페이지 개별 요청수 : " + individual);
+		%>
+		<h2>오늘의 행운의 숫자와 행운의 색깔</h2>
+		행운의 숫자 : <b><%= luckNumber() %></b><br/>
+		행운의 색깔 : <b><%= luckColor() %></b><br/>
+	</body>
+</html>

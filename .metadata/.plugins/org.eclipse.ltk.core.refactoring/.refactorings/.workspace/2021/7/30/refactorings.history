@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ojdbbc&apos; to &apos;18-ojdbbc&apos;" description="Rename resource &apos;ojdbbc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ojdbbc" name="18-ojdbbc" stamp="1626926826583" updateReferences="true"/>
+</session>

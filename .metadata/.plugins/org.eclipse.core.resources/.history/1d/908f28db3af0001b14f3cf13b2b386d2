@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h1>Web프로그래밍</h1>
+		<%!
+		int cumulative = 0;
+		int individual = 1;
+		int luckNum;
+		String luckCol;
+		int reQuest(){
+			return cumulative += 1;
+		}
+		/*
+		int lucknumber(){
+			return luckNum = Math.random(10) + 1;
+		}
+		String luckColor(){
+		}
+		*/
+		%>
+		
+		<%
+		out.println("페이지 누적 요청수 : " + reQuest() + ", 페이지 개별 요청수 : " + individual);
+		
+		%>
+		
+	</body>
+</html>
